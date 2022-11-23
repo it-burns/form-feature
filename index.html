@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Product Landing Page</title>
+    <title>Form Feature</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
@@ -11,18 +11,6 @@
 </head>
 <body>
 
-    <!-- <header id="header">
-        <div class="nav-bar">
-            <div class="nav-items">
-                <div><img src="assets/logo.png" class="logo" alt=""></div>
-                <div class="nav-link">
-                    <a href="#about" class="">About</a>
-                    <a href="#video" class="">Video</a>
-                    <a href="#email" class="">Email</a>
-                </div>
-            </div>
-        </div>
-    </header> -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check">
@@ -81,31 +69,31 @@
                 <div>
                     <h1>Email Us</h1>
                 </div>
-                <form action="#">
+                <form action="./submit.html" method="GET" target="_blank">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">First Name</span>
-                            <input class="input-hover" type="text" placeholder="Enter you first name" required>
+                            <input type="text" name="fName" placeholder="Enter you first name" required>
                         </div>
                         <div class="input-box">
                             <span class="details">Last Name</span>
-                            <input type="text" placeholder="Enter you last name" required>
+                            <input type="text" name="lName" placeholder="Enter you last name" required>
                         </div>
                         <div class="input-box">
                             <span class="details">Email</span>
-                            <input type="email" placeholder="example@email.com" required>
+                            <input type="email" name="email" placeholder="example@email.com" required>
                         </div>
                         <div class="input-box">
                             <span class="details">Phone Number</span>
-                            <input type="text" placeholder="Enter your phone number (optional)">
+                            <input type="text" name="pNumber" placeholder="Enter your phone number (optional)">
                         </div>
                         <div class="input-box text-field">
                             <span class="details">Subject</span>
-                            <textarea class="subject-field"></textarea required>
+                            <textarea class="subject-field" name="subject"></textarea required>
                         </div>
                         <div class="input-box text-field">
                             <span class="details">Message</span>
-                            <textarea class="message-field"></textarea required>
+                            <textarea class="message-field" name="message"></textarea required>
                         </div>
                         <div class="button-email">
                             <input class="button btn" type="submit" value="Send email"></button>
